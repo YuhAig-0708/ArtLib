@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="345dp"
+        android:layout_height="396dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="227dp"
+        android:onClick="selectImage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/selectimage" />
+
+    <EditText
+        android:id="@+id/yearText"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="185dp"
+        android:background="@drawable/text_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Năm Sáng Tác"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/artistText"
+        app:layout_constraintTop_toBottomOf="@+id/artistText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:onClick="save"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+    <EditText
+        android:id="@+id/artistText"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/text_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Tên Tác Giả"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/yearText"
+        app:layout_constraintStart_toStartOf="@+id/artText"
+        app:layout_constraintTop_toBottomOf="@+id/artText" />
+
+    <EditText
+        android:id="@+id/artText"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/text_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Tên Tác Phẩm"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/artistText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnDetailsBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_border"
+        android:onClick="backMain"
+        android:text="&lt; Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
